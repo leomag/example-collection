@@ -82,6 +82,27 @@ public class Main {
 //        hashMap.put("Москва", 4);
 //        iterateOverMapAnalog(hashMap);
 
+
+//        SortedSet<Student> set = new TreeSet<>();
+//        set.add(new Student("Ира", "Медведа", 19));
+//        set.add(new Student("Катя", "Петрова", 23));
+//        set.add(new Student("Аня", "Машкова", 55));
+//        set.add(new Student("Ася", "Иванова", 15));
+//        set.forEach(System.out::println);
+//
+//        Student studentFirst = new Student("Саша", "Иванов", 36);
+//        Student studentSecond = new Student("Вася", "Иванов", 25);
+//
+//        System.out.println(studentFirst.compareTo(studentSecond));
+
+
+        EmoComparator emoComparator = new EmoComparator();
+        SortedSet<EmoList> emoLists = new TreeSet<>(emoComparator);
+        emoLists.add(new EmoList("Кристина", 24));
+        emoLists.add(new EmoList("Ася", 20));
+        emoLists.add(new EmoList("Настя", 15));
+        emoLists.forEach(System.out::println);
+
     }
 
 
